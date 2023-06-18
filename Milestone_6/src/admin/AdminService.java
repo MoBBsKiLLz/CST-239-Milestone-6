@@ -88,9 +88,9 @@ public class AdminService {
 			File file = new File(filename);
 			Scanner s = new Scanner(file);
 			
-			// Create list of Cars by reading JSON file
+			// Create list of products by reading JSON file
 			while(s.hasNext()) {
-				// Read a string of JSON and convert to a Car
+				// Read a string of JSON and convert to a Product
 				String json = s.nextLine();
 				ObjectMapper objectMapper = new ObjectMapper();
 				Product product = objectMapper.readValue(json, Product.class);
