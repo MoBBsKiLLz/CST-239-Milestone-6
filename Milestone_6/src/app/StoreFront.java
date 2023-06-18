@@ -42,7 +42,7 @@ public class StoreFront {
 	/**
 	 * Send a Message to the Server
 	 * 
-	 * @param msg Message to send.
+	 * @param cmd Command to send.
 	 * @return Response back from the Server
 	 * @throws IOException Thrown in the networking classes if something bad happened.
 	 */
@@ -90,9 +90,9 @@ public class StoreFront {
 	/**
 	 * Main method
 	 * @param args Default parameter
-	 * @throws IOException 
-	 * @throws UnknownHostException 
-	 * @throws InterruptedException 
+	 * @throws IOException Thrown in the IO if something bad happened.
+	 * @throws UnknownHostException Thrown in the server if something bad happened.
+	 * @throws InterruptedException Thrown in the thread classes if something bad happened.
 	 */
     public static void main(String[] args) throws UnknownHostException, IOException, InterruptedException {
     	// Create a StoreFront and connect to the remote Server on the specified IP Address and Port
